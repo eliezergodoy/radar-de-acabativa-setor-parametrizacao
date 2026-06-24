@@ -1624,6 +1624,66 @@
       overflow: hidden;
     }
 
+    .subtask-list-panel .list-view {
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-color: var(--border-bright) transparent;
+      scrollbar-width: thin;
+    }
+
+    .subtask-list-panel .list-table {
+      min-width: 1180px;
+      table-layout: fixed;
+    }
+
+    .subtask-list-panel .list-table th:nth-child(1),
+    .subtask-list-panel .list-table td:nth-child(1) {
+      width: 360px;
+      min-width: 360px;
+    }
+
+    .subtask-list-panel .list-table th:nth-child(2),
+    .subtask-list-panel .list-table td:nth-child(2) {
+      width: 320px;
+      min-width: 320px;
+    }
+
+    .subtask-list-panel .list-table th:nth-child(3),
+    .subtask-list-panel .list-table td:nth-child(3) {
+      width: 180px;
+      min-width: 180px;
+    }
+
+    .subtask-list-panel .list-table th:nth-child(4),
+    .subtask-list-panel .list-table td:nth-child(4) {
+      width: 130px;
+      min-width: 130px;
+    }
+
+    .subtask-list-panel .list-table th:nth-child(5),
+    .subtask-list-panel .list-table td:nth-child(5) {
+      width: 130px;
+      min-width: 130px;
+    }
+
+    .subtask-list-panel .list-table th:nth-child(6),
+    .subtask-list-panel .list-table td:nth-child(6) {
+      width: 130px;
+      min-width: 130px;
+    }
+
+    .subtask-list-panel .cell-title {
+      max-width: none;
+    }
+
+    .subtask-list-panel .cell-title-text {
+      display: block;
+      overflow: visible;
+      white-space: normal;
+      line-height: 1.35;
+    }
+
     .subtask-list-panel .panel-card-header {
       padding: 16px 18px;
       border-bottom: 1px solid var(--border);
@@ -3352,7 +3412,7 @@
   </div>
   <!-- JAVASCRIPT — CORE APPLICATION -->
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script src="app-client.js?v=20260624-bundled-data-import"></script>
+  <script src="app-client.js?v=20260624-subtasks-horizontal-scroll"></script>
 </body>
 
 </html>
