@@ -1,0 +1,532 @@
+{
+  "tasks": [
+    {
+      "objetivo": "Elaborar treinamento desses novos processos",
+      "equipe": "Processos",
+      "responsavel": "Processos",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-913",
+      "data_criacao": "2026-06-24T15:17:06.120Z"
+    },
+    {
+      "objetivo": "elaborar um processo com assunto de instalao com cmeras",
+      "equipe": "Processos",
+      "responsavel": "Processos",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-912",
+      "data_criacao": "2026-06-24T15:16:51.136Z"
+    },
+    {
+      "objetivo": "elaborar um fluxograma interno sobre instalao e padronizao das cmeras",
+      "equipe": "Processos",
+      "responsavel": "Processos",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-911",
+      "data_criacao": "2026-06-24T15:16:09.840Z"
+    },
+    {
+      "objetivo": "Emitir nota fiscal de teste com os novos produtos de cmeras",
+      "equipe": "Faturamento",
+      "responsavel": "Faturamento",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-910",
+      "data_criacao": "2026-06-24T15:15:46.720Z"
+    },
+    {
+      "objetivo": "Treinar o tcnico para ensinar o cliente a usabilidade do APP",
+      "equipe": "Operacional",
+      "responsavel": "Operacional",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-909",
+      "data_criacao": "2026-06-24T15:15:12.138Z"
+    },
+    {
+      "objetivo": "instruir o tcnico na padronizao das instalao das cmeras",
+      "equipe": "Operacional",
+      "responsavel": "Operacional",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-908",
+      "data_criacao": "2026-06-24T15:14:18.976Z"
+    },
+    {
+      "objetivo": "Formalizar um modelo de termo para o colaborador assinar",
+      "equipe": "Operacional",
+      "responsavel": "Operacional",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-907",
+      "data_criacao": "2026-06-24T15:13:44.728Z"
+    },
+    {
+      "objetivo": "Definir responsvel pela configurao das cmeras na plataforma",
+      "equipe": "Operacional",
+      "responsavel": "Operacional",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-906",
+      "data_criacao": "2026-06-24T15:13:08.568Z"
+    },
+    {
+      "objetivo": "Solicitar para o setor de compras, os modelos de produtos e cadastrar a twg como fornecedor",
+      "equipe": "Comercial",
+      "responsavel": "Comercial",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-905",
+      "data_criacao": "2026-06-24T15:12:09.792Z"
+    },
+    {
+      "objetivo": "Elaborar os novos planos com cmeras",
+      "equipe": "Comercial",
+      "responsavel": "Comercial",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-904",
+      "data_criacao": "2026-06-24T15:11:02.656Z"
+    },
+    {
+      "objetivo": "Validar modelo de faturamento de cmeras",
+      "equipe": "Faturamento",
+      "responsavel": "Faturamento",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-903",
+      "data_criacao": "2026-06-24T15:10:39.113Z"
+    },
+    {
+      "objetivo": "verificar cnae da uni para cmeras",
+      "equipe": "Comercial",
+      "responsavel": "Comercial",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-902",
+      "data_criacao": "2026-06-24T15:10:15.250Z"
+    },
+    {
+      "objetivo": "Projeto TIP BRASIL",
+      "equipe": "Parametrizao",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-901",
+      "data_criacao": "2026-06-24T15:09:56.035Z"
+    },
+    {
+      "objetivo": "DOCUMENTO EXPLICATIVO DE TRANSFERENCIA ENTRE ALMOXARIFADO",
+      "equipe": "Parametrizao",
+      "responsavel": "Ederson",
+      "prazo_conclusao": "2026-06-30",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-919",
+      "data_criacao": "2026-06-24T14:47:30.760Z"
+    },
+    {
+      "objetivo": "CRIAR ACESSO DAS PREFEITURAS PARA AMBIENTE NACIONAL",
+      "equipe": "Parametrizao",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-07-24",
+      "status": "Em andamento",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-918",
+      "data_criacao": "2026-06-24T14:47:17.128Z"
+    },
+    {
+      "objetivo": "ATUALIZAAO NAS PERMISSOES DOS GRUPOS DE USUARIOS",
+      "equipe": "Parametrizao",
+      "responsavel": "Ederson",
+      "prazo_conclusao": "2026-06-30",
+      "status": "Em andamento",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-917",
+      "data_criacao": "2026-06-24T14:46:48.392Z"
+    },
+    {
+      "objetivo": "INTEGRAAO PREFEITURA SO FRANCISCO",
+      "equipe": "Parametrizao",
+      "responsavel": "Ederson",
+      "prazo_conclusao": "2026-07-24",
+      "status": "Em andamento",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "demo-916",
+      "data_criacao": "2026-06-24T14:46:31.072Z"
+    },
+    {
+      "objetivo": "PROJETO FULLTIME",
+      "equipe": "Parametrizao",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-07-31",
+      "status": "Em andamento",
+      "observacoes": "",
+      "subtarefas": "[{\"id\":1,\"texto\":\"Subir plataforma da fulltime com dominio da UNI\\n\",\"concluido\":false},{\"id\":2,\"texto\":\"Realizar o teste de uma camera com protocolo RTMP\\n\",\"concluido\":false},{\"id\":3,\"texto\":\"Realizar o teste de uma camera com protocolo RTSP\\n\",\"concluido\":false},{\"id\":4,\"texto\":\"Acompanhar o teste do servidor da UNI\\n\",\"concluido\":false},{\"id\":5,\"texto\":\"Acompanhar o desenvolvimento dos APP Android e IOS\\n\",\"concluido\":false},{\"id\":6,\"texto\":\"Configurar os novos planos de vendas com cameras\\n\",\"concluido\":false},{\"id\":7,\"texto\":\"Configurar modelos de faturamento para cameras em comodato\\n\",\"concluido\":false},{\"id\":8,\"texto\":\"Treinar a equipe para usabilidade da plataforma e tambem configuraao e padronizaao externa\\n\",\"concluido\":false},{\"id\":9,\"texto\":\"configurar dentro do sistema os modelos de contrato\",\"concluido\":false},{\"id\":10,\"texto\":\"configurar as regras de faturamento do produto cmeras\",\"concluido\":false}]",
+      "comentarios": "[]",
+      "id": "demo-915",
+      "data_criacao": "2026-06-24T14:46:05.345Z"
+    },
+    {
+      "objetivo": "MIGRAAO DA SPEEDWEB",
+      "equipe": "Parametrizao",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-06-30",
+      "status": "Em andamento",
+      "observacoes": "",
+      "subtarefas": "[{\"id\":1,\"texto\":\"Fazer o levantamento de toda base para migrar\\n\",\"concluido\":false},{\"id\":2,\"texto\":\"Fazer todos os de-para (carteiras, contas, planejamentos, planos de vendas, tipo de documentos, condiao de pagamentos, contratos, \\n\",\"concluido\":false},{\"id\":3,\"texto\":\"Enviar de-para para Thiago\\n\",\"concluido\":false},{\"id\":4,\"texto\":\"Acompanhar equipe da OFF na migraao do financeiro\\n\",\"concluido\":false}]",
+      "comentarios": "[]",
+      "id": "demo-914",
+      "data_criacao": "2026-06-24T14:42:14.289Z"
+    },
+    {
+      "objetivo": "RESTRUTURAAO DE FLUXO DE TRABALHO:RENEGOCIAAO",
+      "equipe": "Parametrizao",
+      "responsavel": "Nat Belarmino",
+      "prazo_conclusao": "",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-fa9998c0-74d1-4cee-b273-1c453766e0c4",
+      "data_criacao": "2026-06-24T14:41:06.296Z"
+    },
+    {
+      "objetivo": "INTEGRAAO COM INSTAGRAM",
+      "equipe": "",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-04-30",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-658139af-db6f-4c14-b49b-121f80017a77",
+      "data_criacao": "2026-06-24T14:40:51.584Z"
+    },
+    {
+      "objetivo": "CONFIGURAAO DA REGUA DE COBRANA",
+      "equipe": "",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-05-30",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-636ad8e7-0cbe-49ca-9f89-936845d855a5",
+      "data_criacao": "2026-06-24T14:40:23.784Z"
+    },
+    {
+      "objetivo": "INSERIR TERMOS DE TELEFONIA NBS",
+      "equipe": "",
+      "responsavel": "Nat Belarmino",
+      "prazo_conclusao": "2026-05-30",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-e545b9ec-dadc-45ae-8969-4f33a53f37ec",
+      "data_criacao": "2026-06-24T14:37:32.809Z"
+    },
+    {
+      "objetivo": "AJUSTE NO PROCESSO DE INSTALAAO/TELEFONA FIXA NBS",
+      "equipe": "",
+      "responsavel": "Nat Belarmino",
+      "prazo_conclusao": "2026-05-30",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-ef52122d-38a4-45d3-a156-30166d4078b3",
+      "data_criacao": "2026-06-24T14:37:00.120Z"
+    },
+    {
+      "objetivo": "PROJETO IA OPA SUITE",
+      "equipe": "",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-03-20",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-cac1ba46-f987-4905-b95d-910fffaa98ce",
+      "data_criacao": "2026-06-24T14:36:21.016Z"
+    },
+    {
+      "objetivo": "PROJETO CANCELAR OS NUMEROS LEGADOS E DEIXAR S O UNIFICADO",
+      "equipe": "",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-05-29",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-142f6c4c-bfdb-4081-a007-a0ab3e5465a6",
+      "data_criacao": "2026-06-24T14:35:55.272Z"
+    },
+    {
+      "objetivo": "PROJETO TELEFONIA OPA SUITE",
+      "equipe": "",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-04-10",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-1043621c-597a-4e7f-88c3-3596fb06b39f",
+      "data_criacao": "2026-06-24T14:35:22.120Z"
+    },
+    {
+      "objetivo": "PROJETO OPA SUITE",
+      "equipe": "",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-02-20",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-16c9c464-ea40-4dca-a73a-fd4e4efa300c",
+      "data_criacao": "2026-06-24T14:33:59.696Z"
+    },
+    {
+      "objetivo": "CONFIGURAR IP PARA ACESSO AO SISTEMA IXC",
+      "equipe": "",
+      "responsavel": "Ederson",
+      "prazo_conclusao": "2026-07-30",
+      "status": "No iniciado",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-75cfa776-cdf6-4154-8066-7a8861d0e692",
+      "data_criacao": "2026-06-24T14:33:02.504Z"
+    },
+    {
+      "objetivo": "LEVANTAMENTO DE TODOS OS GRUPOS DE USUARIOS",
+      "equipe": "",
+      "responsavel": "Ederson",
+      "prazo_conclusao": "2026-07-30",
+      "status": "Em andamento",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-16f8b0c8-40a5-4eee-94a2-753e1217d795",
+      "data_criacao": "2026-06-24T14:32:25.368Z"
+    },
+    {
+      "objetivo": "AJUSTE NO PROCESSO DE TRANSFERENCIA DE ENDEREO ENTRE FILIAIS",
+      "equipe": "",
+      "responsavel": "Nat Belarmino",
+      "prazo_conclusao": "2026-04-30",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[]",
+      "comentarios": "[]",
+      "id": "task-58e4f0df-33a5-424b-bcef-d020c150fc88",
+      "data_criacao": "2026-06-24T14:31:45.408Z"
+    },
+    {
+      "objetivo": "PROJETO REMOAO DOS DESCONTOS",
+      "equipe": "",
+      "responsavel": "Nat Belarmino",
+      "prazo_conclusao": "2026-05-10",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[{\"id\":1,\"texto\":\"Realizar a remoao de todos os descontos dos planos de vendas\\n\",\"concluido\":true},{\"id\":2,\"texto\":\"Retirar os descontos de todos os clientes\\n\",\"concluido\":true},{\"id\":3,\"texto\":\"Ajustar os planos de vendas para valores fixo\\n\",\"concluido\":true}]",
+      "comentarios": "[]",
+      "id": "task-efca6061-c2c1-4ff1-8462-054a637cb5b0",
+      "data_criacao": "2026-06-24T14:28:40.073Z"
+    },
+    {
+      "objetivo": "PROJETO TIP BRASIL",
+      "equipe": "",
+      "responsavel": "Eliezer Godoy",
+      "prazo_conclusao": "2026-06-20",
+      "status": "Finalizado no prazo",
+      "observacoes": "",
+      "subtarefas": "[{\"id\":1,\"texto\":\"Realizar a integraao com a plataforma \\n\",\"concluido\":true},{\"id\":2,\"texto\":\"Realizar os testes de integraao\\n\",\"concluido\":true},{\"id\":3,\"texto\":\"Cadastrar os produtos da TIP VIVO E TIM\\n\",\"concluido\":true},{\"id\":4,\"texto\":\"Realizar a configuraao de tipo de faturamento\\n\",\"concluido\":true},{\"id\":5,\"texto\":\"Cadastrar os planos de vendas passado pelo comercial\\n\",\"concluido\":true},{\"id\":6,\"texto\":\"Realizar os testes de linha vivo e tim, (teste de linha nova, teste de portabilidade,teste de bloqueio e consumo da linha)\\n\",\"concluido\":true},{\"id\":7,\"texto\":\"Realizar o teste junto com o gustavo das notas fiscais \\n\",\"concluido\":true},{\"id\":8,\"texto\":\"Realizar o treinamento com a equipe do comercial Matriz\\n\",\"concluido\":true}]",
+      "comentarios": "[]",
+      "id": "task-31f77158-4d7e-4014-96d4-7493f9103fee",
+      "data_criacao": "2026-06-23T21:30:19.855Z"
+    }
+  ],
+  "departments": [
+    {
+      "nome": "Faturamento",
+      "descricao": "",
+      "sla_dias": "3",
+      "ativo": "true",
+      "id": "dep-1782313396000",
+      "data_criacao": "2026-06-24T15:03:16.000Z"
+    },
+    {
+      "nome": "Operacional",
+      "descricao": "",
+      "sla_dias": "3",
+      "ativo": "true",
+      "id": "dep-1782313390027",
+      "data_criacao": "2026-06-24T15:03:10.027Z"
+    },
+    {
+      "nome": "Comercial",
+      "descricao": "",
+      "sla_dias": "3",
+      "ativo": "true",
+      "id": "dep-1782313384057",
+      "data_criacao": "2026-06-24T15:03:04.057Z"
+    },
+    {
+      "nome": "Processos",
+      "descricao": "",
+      "sla_dias": "3",
+      "ativo": "true",
+      "id": "dep-1782313378297",
+      "data_criacao": "2026-06-24T15:02:58.297Z"
+    },
+    {
+      "nome": "Parametrizao",
+      "descricao": "",
+      "sla_dias": "3",
+      "ativo": "true",
+      "id": "dep-1782313336451",
+      "data_criacao": "2026-06-24T15:02:16.451Z"
+    }
+  ],
+  "collaborators": [
+    {
+      "nome": "Processos",
+      "email": "",
+      "cargo": "",
+      "departamento": "Processos",
+      "status": "Ativo",
+      "id": "col-1782314294810",
+      "data_criacao": "2026-06-24T15:18:14.810Z"
+    },
+    {
+      "nome": "Faturamento",
+      "email": "",
+      "cargo": "",
+      "departamento": "Faturamento",
+      "status": "Ativo",
+      "id": "col-1782314281080",
+      "data_criacao": "2026-06-24T15:18:01.080Z"
+    },
+    {
+      "nome": "Operacional",
+      "email": "",
+      "cargo": "",
+      "departamento": "Operacional",
+      "status": "Ativo",
+      "id": "col-1782314272472",
+      "data_criacao": "2026-06-24T15:17:52.472Z"
+    },
+    {
+      "nome": "Comercial",
+      "email": "",
+      "cargo": "",
+      "departamento": "Comercial",
+      "status": "Ativo",
+      "id": "col-1782314263563",
+      "data_criacao": "2026-06-24T15:17:43.563Z"
+    },
+    {
+      "nome": "Nelson",
+      "email": "",
+      "cargo": "",
+      "departamento": "",
+      "status": "Ativo",
+      "id": "col-1782311277274",
+      "data_criacao": "2026-06-24T14:27:57.274Z"
+    },
+    {
+      "nome": "Ederson",
+      "email": "",
+      "cargo": "",
+      "departamento": "",
+      "status": "Ativo",
+      "id": "col-1782311265991",
+      "data_criacao": "2026-06-24T14:27:45.991Z"
+    },
+    {
+      "nome": "Nat Belarmino",
+      "email": "",
+      "cargo": "",
+      "departamento": "",
+      "status": "Ativo",
+      "id": "col-1782311257812",
+      "data_criacao": "2026-06-24T14:27:37.812Z"
+    },
+    {
+      "nome": "Eliezer Godoy",
+      "email": "eliezer.godoy@soouni.com",
+      "cargo": "Gerente",
+      "departamento": "",
+      "status": "Ativo",
+      "id": "col-1782249969247",
+      "data_criacao": "2026-06-23T21:26:09.247Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "local-access",
+      "nome": "Setor Parametrizao",
+      "email": "parametrizacao@local",
+      "papel": "administrador",
+      "ativo": true
+    }
+  ],
+  "currentUser": {
+    "id": "local-access",
+    "nome": "Setor Parametrizao",
+    "email": "parametrizacao@local",
+    "papel": "administrador",
+    "ativo": true
+  }
+}

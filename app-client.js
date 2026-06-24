@@ -789,10 +789,36 @@
     };
   };
 
+  const hasBusinessData = (data) => (
+    (Array.isArray(data?.tasks) && data.tasks.length) ||
+    (Array.isArray(data?.departments) && data.departments.length) ||
+    (Array.isArray(data?.collaborators) && data.collaborators.length)
+  );
+
+  const loadBundledData = async () => {
+    try {
+      const res = await fetch('radar-data.json', { cache: 'no-store' });
+      if (!res.ok) return null;
+      const data = await res.json();
+      return {
+        tasks: Array.isArray(data.tasks) ? data.tasks : [],
+        departments: Array.isArray(data.departments) ? data.departments : [],
+        collaborators: Array.isArray(data.collaborators) ? data.collaborators : [],
+        users: Array.isArray(data.users) ? data.users : [{ ...LOCAL_USER }],
+        currentUser: data.currentUser || App.currentUser || LOCAL_USER
+      };
+    } catch (_) {
+      return null;
+    }
+  };
+
   const loadTasks = async (options = {}) => {
     const { useCache = false, silent = false, background = false } = options;
     if (!App.apiUrl) {
-      const data = buildLocalBootstrap();
+      let data = buildLocalBootstrap();
+      if (!hasBusinessData(data)) {
+        data = await loadBundledData() || data;
+      }
       hydrateAppData(data);
       persistBootstrapCache(data);
       App.lastBootstrapSignature = getBootstrapSignature(data);
