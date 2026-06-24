@@ -3160,6 +3160,11 @@
           <span id="theme-toggle-icon"><i data-lucide="sun-medium" class="icon"></i></span>
           <span id="theme-toggle-text">Modo Dia</span>
         </button>
+        <button class="btn-icon" type="button" onclick="exportData()" title="Exportar dados"><i data-lucide="download"
+            class="icon"></i></button>
+        <button class="btn-icon" type="button" onclick="document.getElementById('data-import-input').click()" title="Importar dados"><i data-lucide="upload"
+            class="icon"></i></button>
+        <input id="data-import-input" type="file" accept="application/json,.json" style="display:none" onchange="importData(event)" />
         <button class="btn-primary" type="button" id="btn-primary-action" onclick="openPrimaryDrawer()">
           <span class="btn-content"><i data-lucide="plus" class="icon"></i>Nova Tarefa</span>
         </button>
@@ -3347,7 +3352,7 @@
   </div>
   <!-- JAVASCRIPT — CORE APPLICATION -->
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script src="app-client.js?v=20260624-save-id-cache-fix"></script>
+  <script src="app-client.js?v=20260624-import-export"></script>
 </body>
 
 </html>

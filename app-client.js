@@ -995,6 +995,63 @@
     await loadTasks();
   };
 
+  const getPortableData = () => {
+    persistCurrentState();
+    return {
+      exportedAt: new Date().toISOString(),
+      app: 'radar-de-acabativa-setor-parametrizacao',
+      version: 1,
+      data: {
+        tasks: App.tasks,
+        departments: App.departments,
+        collaborators: App.collaborators,
+        users: App.users,
+        currentUser: App.currentUser
+      }
+    };
+  };
+
+  const exportData = () => {
+    const payload = getPortableData();
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const link = document.createElement('a');
+    const stamp = new Date().toISOString().slice(0, 10);
+    link.href = URL.createObjectURL(blob);
+    link.download = `radar-dados-${stamp}.json`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(link.href);
+    toast('Arquivo de dados exportado.', 'success', 2200);
+  };
+
+  const importData = async (event) => {
+    const input = event?.target;
+    const file = input?.files?.[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const parsed = JSON.parse(text);
+      const data = parsed.data || parsed;
+      const nextData = {
+        tasks: Array.isArray(data.tasks) ? data.tasks : [],
+        departments: Array.isArray(data.departments) ? data.departments : [],
+        collaborators: Array.isArray(data.collaborators) ? data.collaborators : [],
+        users: Array.isArray(data.users) ? data.users : [],
+        currentUser: data.currentUser || App.currentUser || LOCAL_USER
+      };
+      hydrateAppData(nextData);
+      persistCurrentState();
+      syncAppChrome();
+      showAppShell();
+      toast('Dados importados com sucesso.', 'success', 3000);
+    } catch (e) {
+      toast('Não foi possível importar os dados: ' + getErrorMessage(e), 'error', 6000);
+    } finally {
+      if (input) input.value = '';
+    }
+  };
+
   const applyFilters = () => {
     App.filteredTasks = App.tasks.filter(t => {
       const u = getUrgency(t);
@@ -3175,7 +3232,9 @@
     deleteCurrentEntity,
     deleteSubtask,
     deleteTaskComment,
+    exportData,
     focusCollaborator,
+    importData,
     loginFlow,
     logoutFlow,
     onDragLeave,
