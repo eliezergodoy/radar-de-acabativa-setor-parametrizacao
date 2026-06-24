@@ -1753,6 +1753,38 @@
     return 'var(--red)';
   };
 
+  const renderPieChart = (segments, total, centerLabel = '') => {
+    const activeSegments = segments.filter(segment => Number(segment.value) > 0);
+    let cursor = 0;
+    const gradient = activeSegments.length
+      ? activeSegments.map(segment => {
+        const start = cursor;
+        const end = cursor + pct(segment.value, total);
+        cursor = end;
+        return `${segment.color} ${start}% ${end}%`;
+      }).join(', ')
+      : 'rgba(255,255,255,0.08) 0% 100%';
+
+    return `
+      <div class="pie-report">
+        <div class="pie-chart" style="background:conic-gradient(${gradient})">
+          <div class="pie-center">
+            <strong>${total}</strong>
+            <span>${escHtml(centerLabel)}</span>
+          </div>
+        </div>
+        <div class="pie-legend">
+          ${segments.map(segment => `
+            <div class="pie-legend-row">
+              <span><i class="legend-dot" style="background:${segment.color}"></i>${escHtml(segment.label)}</span>
+              <strong>${segment.value}</strong>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  };
+
   const renderExecutiveHero = (title, copy, kpis, insights) => {
     return `
       <div class="hero-panel">
@@ -2115,11 +2147,11 @@
             </div>
           </div>
           ${scopedTasks.length ? `
-            <div class="report-bars">
-              <div class="report-bar-row"><div class="report-bar-label"><span>Finalizadas</span><strong>${completedTasks}</strong></div><div class="report-bar-track"><div class="report-bar-fill green" style="width:${pct(completedTasks, scopedTasks.length)}%"></div></div></div>
-              <div class="report-bar-row"><div class="report-bar-label"><span>Em aberto</span><strong>${openTasks}</strong></div><div class="report-bar-track"><div class="report-bar-fill yellow" style="width:${pct(openTasks, scopedTasks.length)}%"></div></div></div>
-              <div class="report-bar-row"><div class="report-bar-label"><span>Atrasadas</span><strong>${overdueTasks}</strong></div><div class="report-bar-track"><div class="report-bar-fill red" style="width:${pct(overdueTasks, scopedTasks.length)}%"></div></div></div>
-            </div>
+            ${renderPieChart([
+              { label: 'Finalizadas', value: completedTasks, color: 'var(--green)' },
+              { label: 'Em aberto', value: openTasks, color: 'var(--yellow)' },
+              { label: 'Atrasadas', value: overdueTasks, color: 'var(--red)' }
+            ], scopedTasks.length, 'tarefas')}
             <div class="table-note">${completedTasks} de ${scopedTasks.length} tarefas principais finalizadas.</div>
           ` : '<div class="empty-col">Cadastre tarefas para gerar relatórios</div>'}
         </div>
@@ -2142,25 +2174,17 @@
             <div class="panel-card-title">Gráfico de tarefas por setor</div>
             <div class="panel-card-subtitle">Finalizadas, em andamento e não iniciadas</div>
             ${topEquipes.length ? topEquipes.map(item => {
-              const finalizadoPct = pct(item.finalizado, item.total);
-              const andamentoPct = pct(item.andamento, item.total);
-              const naoIniciadoPct = pct(item.naoIniciado, item.total);
               return `
                 <div class="sector-chart-row">
                   <div class="sector-chart-head">
                     <div class="metric-name">${escHtml(item.nome)}</div>
                     <div class="metric-value">${item.total}</div>
                   </div>
-                  <div class="sector-stacked-bar" title="${escAttr(item.nome)}">
-                    <div class="sector-segment done" style="width:${finalizadoPct}%"></div>
-                    <div class="sector-segment progress" style="width:${andamentoPct}%"></div>
-                    <div class="sector-segment idle" style="width:${naoIniciadoPct}%"></div>
-                  </div>
-                  <div class="sector-chart-legend">
-                    <span><i class="legend-dot done"></i>${item.finalizado} finalizadas</span>
-                    <span><i class="legend-dot progress"></i>${item.andamento} em andamento</span>
-                    <span><i class="legend-dot idle"></i>${item.naoIniciado} não iniciadas</span>
-                  </div>
+                  ${renderPieChart([
+                    { label: 'Finalizadas', value: item.finalizado, color: 'var(--green)' },
+                    { label: 'Em andamento', value: item.andamento, color: 'var(--yellow)' },
+                    { label: 'Não iniciadas', value: item.naoIniciado, color: 'var(--blue)' }
+                  ], item.total, 'tarefas')}
                 </div>
               `;
             }).join('') : '<div class="empty-col">Sem tarefas com setor informado</div>'}
@@ -2169,10 +2193,10 @@
             <div class="panel-card-title">Relatório de subtarefas</div>
             <div class="panel-card-subtitle">Execução detalhada dentro das tarefas principais</div>
             ${scopedSubtasks.length ? `
-              <div class="report-bars">
-                <div class="report-bar-row"><div class="report-bar-label"><span>Concluídas</span><strong>${doneSubtasks}</strong></div><div class="report-bar-track"><div class="report-bar-fill green" style="width:${pct(doneSubtasks, scopedSubtasks.length)}%"></div></div></div>
-                <div class="report-bar-row"><div class="report-bar-label"><span>Pendentes</span><strong>${openSubtasks}</strong></div><div class="report-bar-track"><div class="report-bar-fill blue" style="width:${pct(openSubtasks, scopedSubtasks.length)}%"></div></div></div>
-              </div>
+              ${renderPieChart([
+                { label: 'Concluídas', value: doneSubtasks, color: 'var(--green)' },
+                { label: 'Pendentes', value: openSubtasks, color: 'var(--blue)' }
+              ], scopedSubtasks.length, 'subtarefas')}
               <div class="table-note">${doneSubtasks} de ${scopedSubtasks.length} subtarefas concluídas.</div>
             ` : '<div class="empty-col">Adicione subtarefas dentro das tarefas</div>'}
           </div>
